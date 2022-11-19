@@ -1,5 +1,17 @@
 body {
+    display: flex;
+    justify-content: space-between;
     background-image: url(snail.jpg);
-    background-size: 25%;
+    background-size: 35%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: lightblue;
+}
+
+div {
+    height: 300px;
+    width: 250px;
+    border: 10px solid red;
+    background-color: pink;
+
 }
