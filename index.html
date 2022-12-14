@@ -7,12 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snail</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
-    <div class="box">yap</div>
-    <div class="box">nap</div>
-    <div class="box">aap</div>
- <p></p>   
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+ <img src="snail.jpg" style="width:472px;height:599px;" alt="a snail" usemap="#snail">
+ <map name="#snail">
+    <area shape="rect" coords="50,50,150,150" alt="a boxth" href="https://www.google.com/">
+    <area shape="circle" coords="300,300,50" alt="iono" href="https://www.yahoo.com/" onclick="hello()">
+ </map>  
+ <script>
+    hello = () => {
+        alert("Cool place to click, huh?");
+    }
+ </script> 
 </body>
 </html>
