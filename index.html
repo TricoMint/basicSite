@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="style.css">
@@ -10,14 +10,24 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
+<!-- Messy, I know. I'm trying to learn how all this works... -->
+
 <body>
-    <div class="box">Box 1</div>
-    <div class="box">Box 2</div>
+<h1 title="I raised it from a wee baby.">That's my Snail</h1>
+    <hr>    
+<pre>It sure is, <del>a</del><ins>n</ins><del>d</del> w<mark>ha</mark>t a 
+<b>looker!</b></pre>
+
+<a href="notAnActualLink">Here's a link that doesn't <em><sub>actually</sub> <sup>work</sup></em></a>
+    <hr>    
+    <p>One time I was quoted as saying:<blockquote cite="I said it"><q>I own a snail, and that snail is this one. <abbr title="I Own A Snail And That Snail Is This One">IOASATSITO<abbr>.</q></blockquote></p>
+    <div style="border:5px solid magenta"class="box">Box 1</div>
+    <div style="border:5px solid aqua" class="box">Box 2</div>
     <div class="box">Box 3</div>
- <img src="snail.jpg" style="width:472px;height:599px;" alt="a snail" usemap="#snail">
+ <img src="snail.jpg" style="width:354px;height:449px;" alt="a snail" usemap="#snail">
  <map name="#snail">
-    <area shape="rect" coords="50,50,150,150" alt="a boxth" href="https://www.google.com/">
-    <area shape="circle" coords="300,300,50" alt="iono" href="https://www.yahoo.com/" onclick="hello()">
+    <area shape="rect" coords="50,50,150,150" alt="a box that links to google" href="https://www.google.com/">
+    <area shape="circle" coords="300,300,50" alt="a circle that links to yahoo" href="https://www.yahoo.com/" onclick="hello()">
  </map>  
  <script>
     hello = () => {

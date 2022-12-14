@@ -1,17 +1,24 @@
-/*body {
-    display: flex;
-    justify-content: space-between;
-    background-image: url(snail.jpg);
-    background-size: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: lightblue;
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    font-size:400%;
+    font-family:verdana;
+    text-align:center;
+    background-color:lightblue;
+}
+
+pre {
+    color:red;
+}
+
+b {
+    color:green;
 }
 
 div {
-    height: 300px;
-    width: 250px;
-    border: 10px solid red;
-    background-color: pink;
-
-}*/
+    border:5px solid gold;
+    padding: 10px;
+    margin: 10px;
+}
