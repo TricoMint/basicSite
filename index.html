@@ -18,18 +18,50 @@
 <pre>It sure is, <del>a</del><ins>n</ins><del>d</del> w<mark>ha</mark>t a 
 <b>looker!</b></pre>
 
-<a href="notAnActualLink">Here's a link that doesn't <em><sub>actually</sub> <sup>work</sup></em></a>
+<a href="#uselessButton" title="Click here to be taken to the Useless Button">Useless Button</a>
+
+<a href="https://www.ask.com/" title="Click here to go to Ask.com" target="_blank">Here's a link to <em><sub>Ask</sub>.<sup>com</sup></em></a>
     <hr>    
-    <p>One time I was quoted as saying:<blockquote cite="I said it"><q>I own a snail, and that snail is this one. <abbr title="I Own A Snail And That Snail Is This One">IOASATSITO<abbr>.</q></blockquote></p>
+    <p>One time I was quoted as saying:<blockquote cite="I said it"><q>I have a snail, and that snail is this one. <abbr title="I Have A Snail And That Snail Is This One">IHASATSITO<abbr>.</q></blockquote>
+    </p>
     <div style="border:5px solid magenta"class="box">Box 1</div>
     <div style="border:5px solid aqua" class="box">Box 2</div>
     <div class="box">Box 3</div>
- <img src="snail.jpg" style="width:354px;height:449px;" alt="a snail" usemap="#snail">
+ <img src="/images/snail.jpg" style="width:354px;height:449px;" alt="a snail" usemap="#snail">
  <map name="#snail">
-    <area shape="rect" coords="50,50,150,150" alt="a box that links to google" href="https://www.google.com/">
-    <area shape="circle" coords="300,300,50" alt="a circle that links to yahoo" href="https://www.yahoo.com/" onclick="hello()">
+    <area shape="rect" title="Click here to go to Google.com" coords="50,50,150,150" alt="a box that links to google" href="https://www.google.com/" target="_blank">
+    <area shape="circle" title="Click here to go to Yahoo.com" coords="300,300,50" alt="a circle that links to yahoo" href="https://www.yahoo.com/" onclick="hello()" target="_blank">
  </map>  
- <script>
+ <hr>
+ <p>
+ <button id="uselessButton">A button with no use</button>
+ some more text
+ <a href="https://duckduckgo.com/?va=b&t=hc" title="Click to go to DuckDuckGo.com" target="_blank">
+ <img src="/images/snail2.jpg" style="width:213px;height:158px;" alt="2 snails"></a>
+This is some random text to help me get my bearings 
+</p>
+<hr>
+    <img src="/images/momsnail.jpg" style="width:30%">
+<hr>
+<table style="width:60%">
+    <caption>A Table About Snails</caption>
+    <tr style="height:50px">
+        <th style="width:50%">Color</th>
+        <th>Species</th>
+        <th style="width:40%">Name</th>
+    </tr>
+    <tr>
+        <td>Mottled Brown</td>
+        <td>Mystery</td>
+        <td>Jake</td>
+    </tr>
+    <tr>
+        <td>Orange</td>
+        <td>Nerite</td>
+        <td>Charles</td>
+    </tr>
+</table>
+<script>
     hello = () => {
         alert("Cool place to click, huh?");
     }
