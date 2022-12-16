@@ -18,16 +18,16 @@
 <pre>It sure is, <del>a</del><ins>n</ins><del>d</del> w<mark>ha</mark>t a 
 <b>looker!</b></pre>
 
-<a href="#uselessButton" title="Click here to be taken to the Useless Button">Useless Button</a>
+<a href="#uselessButton" class="buhbus" title="Click here to be taken to the Useless Button">Useless Button</a>
 
-<a href="https://www.ask.com/" title="Click here to go to Ask.com" target="_blank">Here's a link to <em><sub>Ask</sub>.<sup>com</sup></em></a>
+<a class="ask" href="https://www.ask.com/" title="Click here to go to Ask.com" target="_blank">Here's a link to <em><sub>Ask</sub>.<sup>com</sup></em></a>
     <hr>    
     <p>One time I was quoted as saying:<blockquote cite="I said it"><q>I have a snail, and that snail is this one. <abbr title="I Have A Snail And That Snail Is This One">IHASATSITO<abbr>.</q></blockquote>
     </p>
     <div style="border:5px solid magenta"class="box">Box 1</div>
     <div style="border:5px solid aqua" class="box">Box 2</div>
     <div class="box">Box 3</div>
- <img src="/images/snail.jpg" style="width:354px;height:449px;" alt="a snail" usemap="#snail">
+ <img src="/images/snail.jpg" style="width:354px;height:449px;" alt="a snail" usemap="#snail" title="That's my snail right there">
  <map name="#snail">
     <area shape="rect" title="Click here to go to Google.com" coords="50,50,150,150" alt="a box that links to google" href="https://www.google.com/" target="_blank">
     <area shape="circle" title="Click here to go to Yahoo.com" coords="300,300,50" alt="a circle that links to yahoo" href="https://www.yahoo.com/" onclick="hello()" target="_blank">
@@ -44,6 +44,10 @@ This is some random text to help me get my bearings
     <img src="/images/momsnail.jpg" style="width:30%">
 <hr>
 <table style="width:60%">
+    <colgroup>
+        <col span="1">
+    <col span="2" style="background-color:violet">
+    </colgroup>
     <caption>A Table About Snails</caption>
     <tr style="height:50px">
         <th style="width:50%">Color</th>
@@ -61,9 +65,47 @@ This is some random text to help me get my bearings
         <td>Charles</td>
     </tr>
 </table>
+<hr id="yappers">
+<ul id="snailsare"><p>Snails are:</p>
+    <li class="list"><a class="are" href="noLink" target="_blank">Cute</a></li>
+    <li class="list"><a class="are" href="noLink" target="_blank">Cuddly</a></li>
+    <li class="list"><a class="are" href="noLink" target="_blank">Ascendant</a></li>
+</ul>
+
+<ol start="7" type="I"><p>Snails can:</p>
+    <li>Fly
+        <ul id="directions">
+            <li>upwards</li>
+            <li>downwards</li>
+            <li>leftwards</li>
+            <li>rightwards</li>
+        </ul>
+    </li>
+    <li>Crawl</li>
+    <li>Ascend</li>
+</ol>
+
+<dl><p>Snail Traits:</p>
+    <dt>Fast</dt>
+    <dd>(They can sprint vast distances)</dd>
+    <dt>Cunning</dt>
+    <dd>(The most smartest of all)</dd>
+    <dt>Penchant for destruction</dt>
+    <dd>(levels towns, cities, and hamlets)</dd>
+</dl> 
+<hr id="fruffles">
+<p id="iframeExplanation"> Here's my site within my site: </p>
+    <iframe src="index.html" id="iframe" name="iframe" height="400" width="600" title="the same site"></iframe>
+<p><a href="/extraPage/snail.html" target="iframe">Click here to see a snail again</a></p>
+<hr>
+<p id="clicky">I like snails</p>
+<button onclick="textChange()">Click</button>
 <script>
     hello = () => {
         alert("Cool place to click, huh?");
+    }
+    textChange = () => {
+        document.getElementById("clicky").innerText = "I LOVE snails";
     }
  </script> 
 </body>

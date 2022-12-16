@@ -28,8 +28,8 @@ div {
     
 }
 
-a:link, a:visited {
-    background-color: blue;
+.buhbus:visited, .buhbus:link {
+    background-color: Orange;
     color: aqua;
     padding: 15px 15px;
     text-align: center;
@@ -38,9 +38,23 @@ a:link, a:visited {
     font-weight: bolder;
 }
 
-a:hover, a:active {
+.buhbus:hover, .buhbus:active {
     background-color: red;
-}
+} 
+
+.ask:link, .ask:visited {
+    background-color: blue;
+    color: aqua;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+} 
+
+.ask:hover, .ask:active {
+    background-color: red;
+} 
 
 table, th, td {
     border:1px solid black;
@@ -52,6 +66,57 @@ th, td {
     border-spacing: 10px;
 }
 
-th {
-    text-align: right;
+tr:hover {
+    background-color: red;
+    color: blue;
+}
+
+#yappers {
+    height: 25px;
+    background-color: bisque;
+    border: 5px solid gold;
+}
+
+#directions {
+    list-style-type: square;
+}
+
+#snailsare {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkseagreen;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    float: left;
+}
+
+.are {
+    display: block;
+    color: darkgreen;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(138, 219, 192);
+}
+
+#uselessButton {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#fruffles {
+    border: 2px solid black;
+}
+
+#iframe {
+    border:3px solid darkorchid;
+}
+
+#iframeExplanation {
+    font-size: 20px;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
 }
