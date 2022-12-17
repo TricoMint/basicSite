@@ -41,8 +41,12 @@
 This is some random text to help me get my bearings 
 </p>
 <hr>
-    <img src="/images/momsnail.jpg" style="width:30%">
-<hr>
+    <picture>
+        <source srcset="/images/snailunderleaf.jpg" media="(max-width: 800px)">
+        <source srcset="/images/neritebuddy.jpg" media="(max-width: 1100px)">
+        <img src="/images/momsnail.jpg" style="width:30%">
+    </picture>
+    <hr>
 <table style="width:60%">
     <colgroup>
         <col span="1">
@@ -100,12 +104,29 @@ This is some random text to help me get my bearings
 <hr>
 <p id="clicky">I like snails</p>
 <button onclick="textChange()">Click</button>
+<hr>
+<p>hello sna&#769;ils 🐌</p>
+<form action="/action_page.php" target="_blank">
+    <label for="snailer">Choose a Snail:</label>
+    <select id="snailer" name="snailer" size="2">
+        <option value="snailey">Snailey</option>
+        <option value="snailert">Snailert</option>
+        <option value="Snailithy" selected>Snailihty</option>
+    </select>
+    <input type="submit" value="Snailed">
+</form>
 <script>
     hello = () => {
         alert("Cool place to click, huh?");
     }
     textChange = () => {
-        document.getElementById("clicky").innerText = "I LOVE snails";
+        let a = "I LOVE ";
+        let b = "snails";
+        document.getElementById("clicky").innerText = a + b;
+        document.getElementById("clicky").style.fontSize = "10vw";
+        document.getElementById("clicky").style.color = "magenta";
+        document.getElementById("clicky").style.backgroundColor = "teal";
+       
     }
  </script> 
 </body>
