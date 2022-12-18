@@ -106,15 +106,100 @@ This is some random text to help me get my bearings
 <button onclick="textChange()">Click</button>
 <hr>
 <p>hello sna&#769;ils 🐌</p>
-<form action="/action_page.php" target="_blank">
+<form action="/extraPage/snail.html" target="_blank">
     <label for="snailer">Choose a Snail:</label>
-    <select id="snailer" name="snailer" size="2">
+    <select id="snailer" name="snailer" size="2" multiple>
         <option value="snailey">Snailey</option>
         <option value="snailert">Snailert</option>
         <option value="Snailithy" selected>Snailihty</option>
     </select>
     <input type="submit" value="Snailed">
 </form>
+<hr>
+<textarea id="snailtextarea" name="message">
+    Snail
+</textarea>
+<hr>
+<button type="button" onclick="hello()">clickert</button>
+<hr>
+<form action="/extraPage/snail.html" target="_blank">
+    <input list="snailoptions">
+    <datalist id="snailoptions">
+        <option value="1 snail"></option>
+        <option value="2 snails"></option>
+        <option value="3 snails"></option>
+        <option value="4 snails"></option>
+        <option value="5 snails"></option>
+    </datalist>
+    <input type="submit" value="snail me that">
+</form> 
+<hr>
+<form action="/extraPage/snail.html" target="_blank">
+    <label for="snailing">Snail it then:</label><br>
+    <input id="snailing" name="snailing"><br>
+    <label for="snailent">Snail yourself:</label><br>
+    <input type="password" id="snailent" name="snailent"><br>
+<input type="radio" id="snailley" name="snailchoice" value="snailley">
+<label for="snailley">Snailley</label><br>
+<input type="radio" id="snailathon" name="snailchoice" value="snailathon" disabled>
+<label for="snailathon">Snailathon</label><br>
+<input type="radio" id="snailethos" name="snailchoice" value="snailethos">
+<label for="snailethos">Snailethos</label><br>
+<input type="checkbox" id="snailerton" name="snailychoice" value="snailerton">
+<label for="snailerton">Snailerton</label><br>
+<input type="checkbox" id="snailpo" name="snailychoice" value="snailpo">
+<label for="snailpo">Snailpo</label><br><br>
+<input type="submit" value="Snail it right now"><br><br>
+<input type="reset" value="Unsnail">
+</form>
+<hr>
+<p id="snailcolortitle">Pick your favorite snail color:</p>
+<form action="/extraPage/snail.html" target="_blank">
+    <input type="color"><br><br>
+    <input type="submit" value="That's my favorite color">
+</form>
+<hr>
+<form action="/extraPage/snail.html" target="_blank">
+    <label for="snailage">How old is snail?</label><br><br>
+    <input type="date" id="snailage" name="snailage" min="2021-06-25" max="2022-10-10"><br><br>
+    <input type="submit" value="That's how old">
+</form><br>
+<form action="/extraPage/snail.html" target="_blank">
+    <label for="snailborn">When snail born?</label><br><br>
+    <input type="datetime-local" id="snailborn" name="snailborn"><br><br>
+    <input type="submit" value="Snail was born then">
+</form>
+<hr>
+<form action="/extraPage/snail.html" autocomplete="on" target="_blank">
+    <label for="snailemail">Give snail email:</label><br><br>
+    <input type="email" id="snailemail" name="snailemail" placeholder="Ex: MrSnail@snail.com"><br><br>
+    <label for="snailfile">Upload snail file</label>
+    <input type="file" id="snailfile" name="snailfile">
+    <p>Click snail picture to submit</p>
+    <input type="image" src="/images/snail2.jpg" style="height:40px;width:40px;" alt="A snail for a submit button">
+</form>
+<form action="/extraPage/snail.html" target="_blank">
+    <label for="snailmonth">Month of Snail?</label><br><br>
+    <input type="month" id="snailmonth" name="snailmonth"><br><br>
+    <input type="submit" value="Go">
+</form>
+<hr>
+<form action="/extraPage/snail.html" target="_blank">
+    <label for="snailnumber">How many snail?</label><br><br>
+    <input type="range" id="snailnumber" name="snailnumber" step="3" value="1" max="25" min="5"><br><br>
+    <input type="submit" value="That many">
+</form>
+<hr>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="20" stroke="orange" stroke-width="4" fill="red" />
+  </svg>
+<hr>
+<p><b>A Snail</b> Video</p>
+<video width="200" height="200" controls>
+    <source src="/videos/snail.mp4" type="video/mp4">
+</video>
+
+
 <script>
     hello = () => {
         alert("Cool place to click, huh?");
