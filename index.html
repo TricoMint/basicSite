@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
     <script src="javascript.js" defer></script>
+    <script src="https://kit.fontawesome.com/3638ee08ad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
 <!-- Messy, I know. I'm trying to learn how all this works... -->
 
 <body>
+    <i class="fa-solid fa-droplet fa-4x"></i>
 <h1 title="I raised it from a wee baby.">That's my Snail</h1>
     <hr>    
 <pre>It sure is, <del>a</del><ins>n</ins><del>d</del> w<mark>ha</mark>t a 
@@ -22,8 +24,11 @@
 
 <a class="ask" href="https://www.ask.com/" title="Click here to go to Ask.com" target="_blank">Here's a link to <em><sub>Ask</sub>.<sup>com</sup></em></a>
     <hr>    
-    <p>One time I was quoted as saying:<blockquote cite="I said it"><q>I have a snail, and that snail is this one. <abbr title="I Have A Snail And That Snail Is This One">IHASATSITO<abbr>.</q></blockquote>
+    <p>One time I was quoted as saying:<blockquote id="quote" cite="I said it"><q>I have a snail, and that snail is this one. <abbr title="I Have A Snail And That Snail Is This One">IHASATSITO<abbr>.</q></blockquote>
     </p>
+    <hr>
+    <p id="marginauto">Snail text or something</p>
+    <hr>
     <div style="border:5px solid magenta"class="box">Box 1</div>
     <div style="border:5px solid aqua" class="box">Box 2</div>
     <div class="box">Box 3</div>
@@ -69,136 +74,12 @@ This is some random text to help me get my bearings
         <td>Charles</td>
     </tr>
 </table>
-<hr id="yappers">
-<ul id="snailsare"><p>Snails are:</p>
-    <li class="list"><a class="are" href="noLink" target="_blank">Cute</a></li>
-    <li class="list"><a class="are" href="noLink" target="_blank">Cuddly</a></li>
-    <li class="list"><a class="are" href="noLink" target="_blank">Ascendant</a></li>
+<hr>
+<ul>
+    <li>Snailer</li>
+    <li>Snailen</li>
+    <li>Snailet</li>
 </ul>
-
-<ol start="7" type="I"><p>Snails can:</p>
-    <li>Fly
-        <ul id="directions">
-            <li>upwards</li>
-            <li>downwards</li>
-            <li>leftwards</li>
-            <li>rightwards</li>
-        </ul>
-    </li>
-    <li>Crawl</li>
-    <li>Ascend</li>
-</ol>
-
-<dl><p>Snail Traits:</p>
-    <dt>Fast</dt>
-    <dd>(They can sprint vast distances)</dd>
-    <dt>Cunning</dt>
-    <dd>(The most smartest of all)</dd>
-    <dt>Penchant for destruction</dt>
-    <dd>(levels towns, cities, and hamlets)</dd>
-</dl> 
-<hr id="fruffles">
-<p id="iframeExplanation"> Here's my site within my site: </p>
-    <iframe src="index.html" id="iframe" name="iframe" height="400" width="600" title="the same site"></iframe>
-<p><a href="/extraPage/snail.html" target="iframe">Click here to see a snail again</a></p>
-<hr>
-<p id="clicky">I like snails</p>
-<button onclick="textChange()">Click</button>
-<hr>
-<p>hello sna&#769;ils 🐌</p>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailer">Choose a Snail:</label>
-    <select id="snailer" name="snailer" size="2" multiple>
-        <option value="snailey">Snailey</option>
-        <option value="snailert">Snailert</option>
-        <option value="Snailithy" selected>Snailihty</option>
-    </select>
-    <input type="submit" value="Snailed">
-</form>
-<hr>
-<textarea id="snailtextarea" name="message">
-    Snail
-</textarea>
-<hr>
-<button type="button" onclick="hello()">clickert</button>
-<hr>
-<form action="/extraPage/snail.html" target="_blank">
-    <input list="snailoptions">
-    <datalist id="snailoptions">
-        <option value="1 snail"></option>
-        <option value="2 snails"></option>
-        <option value="3 snails"></option>
-        <option value="4 snails"></option>
-        <option value="5 snails"></option>
-    </datalist>
-    <input type="submit" value="snail me that">
-</form> 
-<hr>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailing">Snail it then:</label><br>
-    <input id="snailing" name="snailing"><br>
-    <label for="snailent">Snail yourself:</label><br>
-    <input type="password" id="snailent" name="snailent"><br>
-<input type="radio" id="snailley" name="snailchoice" value="snailley">
-<label for="snailley">Snailley</label><br>
-<input type="radio" id="snailathon" name="snailchoice" value="snailathon" disabled>
-<label for="snailathon">Snailathon</label><br>
-<input type="radio" id="snailethos" name="snailchoice" value="snailethos">
-<label for="snailethos">Snailethos</label><br>
-<input type="checkbox" id="snailerton" name="snailychoice" value="snailerton">
-<label for="snailerton">Snailerton</label><br>
-<input type="checkbox" id="snailpo" name="snailychoice" value="snailpo">
-<label for="snailpo">Snailpo</label><br><br>
-<input type="submit" value="Snail it right now"><br><br>
-<input type="reset" value="Unsnail">
-</form>
-<hr>
-<p id="snailcolortitle">Pick your favorite snail color:</p>
-<form action="/extraPage/snail.html" target="_blank">
-    <input type="color"><br><br>
-    <input type="submit" value="That's my favorite color">
-</form>
-<hr>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailage">How old is snail?</label><br><br>
-    <input type="date" id="snailage" name="snailage" min="2021-06-25" max="2022-10-10"><br><br>
-    <input type="submit" value="That's how old">
-</form><br>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailborn">When snail born?</label><br><br>
-    <input type="datetime-local" id="snailborn" name="snailborn"><br><br>
-    <input type="submit" value="Snail was born then">
-</form>
-<hr>
-<form action="/extraPage/snail.html" autocomplete="on" target="_blank">
-    <label for="snailemail">Give snail email:</label><br><br>
-    <input type="email" id="snailemail" name="snailemail" placeholder="Ex: MrSnail@snail.com"><br><br>
-    <label for="snailfile">Upload snail file</label>
-    <input type="file" id="snailfile" name="snailfile">
-    <p>Click snail picture to submit</p>
-    <input type="image" src="/images/snail2.jpg" style="height:40px;width:40px;" alt="A snail for a submit button">
-</form>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailmonth">Month of Snail?</label><br><br>
-    <input type="month" id="snailmonth" name="snailmonth"><br><br>
-    <input type="submit" value="Go">
-</form>
-<hr>
-<form action="/extraPage/snail.html" target="_blank">
-    <label for="snailnumber">How many snail?</label><br><br>
-    <input type="range" id="snailnumber" name="snailnumber" step="3" value="1" max="25" min="5"><br><br>
-    <input type="submit" value="That many">
-</form>
-<hr>
-<svg width="100" height="100">
-    <circle cx="50" cy="50" r="20" stroke="orange" stroke-width="4" fill="red" />
-  </svg>
-<hr>
-<p><b>A Snail</b> Video</p>
-<video width="200" height="200" controls>
-    <source src="/videos/snail.mp4" type="video/mp4">
-</video>
-
 
 <script>
     hello = () => {
