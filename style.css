@@ -11,6 +11,7 @@ body {
     font-family:verdana;
     text-align:center;
     height: 100px;
+    z-index: 2;
 }
 
 i {
@@ -80,7 +81,7 @@ pre {
     font-size: 30px;
 }
 
-ul {
+.emoji {
     list-style-image: url("/images/snailemoji.png");
     list-style-position: inside;
 }
@@ -125,4 +126,87 @@ tr:hover {
     height: 120px;
     font-size: 200%;
     overflow: auto;
+}
+
+.highlight {
+    font-size: 30px;
+    color: rgb(59, 52, 10);
+}
+
+.highlight::selection {
+    background: rgba(255, 0, 0, 0.534);
+    color: whitesmoke;
+}
+
+.snailz {
+    opacity: 0.6;
+    height: 150px;
+}
+
+.snailz:hover {
+    opacity: 1;
+}
+
+.snailshrimp {
+    border: 2px solid black;
+    height: 300px;
+    width: 450px;
+    background-image: url("/images/snailtext.jpg");
+    background-size: cover;
+}
+
+.snailtext {
+    border: 2 px solid rgba(0, 0, 0, 0.644);
+    margin: 20px;
+    margin-top: 80px;
+    padding: 7px;
+    background: rgba(49, 46, 46, 0.473);
+}
+
+.snailtext p {
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px black;
+} 
+
+.snaillist {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;
+}
+
+.snaillist li {
+    background-color: rgba(0, 0, 0, 0.137);
+    border-right: 1px solid white;
+    float: right;
+    font-weight: bold;
+}
+
+.snaillist a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.snaillist a:hover {
+    background-color: black;
+    color: white;
+}
+
+#snailhome {
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(21, 21, 54);
+    color:rgb(255, 255, 255);
+}
+
+#about {
+    border-left: 1px solid white;
 }
