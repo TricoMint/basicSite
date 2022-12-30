@@ -181,16 +181,16 @@ tr:hover {
 }
 
 .snaillist li {
-    background-color: rgba(0, 0, 0, 0.137);
-    border-right: 1px solid white;
-    float: right;
     font-weight: bold;
 }
 
 .snaillist a {
+    float: right;
+    border-right: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.623);
     display: block;
     text-decoration: none;
-    color: black;
+    color: rgb(233, 233, 233);
     padding: 10px;
 }
 
@@ -209,4 +209,43 @@ tr:hover {
 
 #about {
     border-left: 1px solid white;
+}
+
+.dropbtn {
+    background-color: rgb(154, 154, 189);
+    color: black;
+    padding: 15px;
+    font-size: 22px;
+    border: 2px solid gray;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropchoices {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 100px;
+}
+
+.dropchoices a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropchoices a:hover {
+    background-color: aqua;
+}
+
+.dropdown:hover .dropchoices {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aquamarine;
 }
