@@ -220,6 +220,7 @@ tr:hover {
 }
 
 .dropdown {
+    z-index: 1;
     position: relative;
     display: inline-block;
 }
@@ -229,6 +230,23 @@ tr:hover {
     position: absolute;
     background-color: aliceblue;
     min-width: 100px;
+}
+
+#droppic {
+    position: relative;
+    display: inline-block;
+}
+
+#droppiccontent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(250, 190, 190);
+    text-align: center;
+}
+
+#droppic:hover #droppiccontent {
+    display: block;
 }
 
 .dropchoices a {
