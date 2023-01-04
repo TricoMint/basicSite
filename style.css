@@ -148,6 +148,7 @@ tr:hover {
 }
 
 .snailshrimp {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 2px solid black;
     height: 300px;
     width: 450px;
@@ -266,4 +267,38 @@ tr:hover {
 
 .dropdown:hover .dropbtn {
     background-color: aquamarine;
+}
+
+.bigsnail {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.lilsnail {
+    box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.13) inset;
+    font-size: 2em;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    margin: 10px;
+    background-color: blue;
+    border: 2px solid rgb(22, 22, 126);
+    padding: 10px;
+    max-width: 100px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.lilsnail:hover {
+    box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.466);
+    max-width: 240px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.575);
+}
+
+.snailbox {
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+    background-image: linear-gradient(45deg, rgb(139, 139, 255),rgb(189, 0, 189), rgba(29, 11, 192, 0.445));
+    width: 360px;  
 }
