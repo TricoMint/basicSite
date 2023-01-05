@@ -8,10 +8,12 @@ body {
     background-color: rgb(141, 141, 223);
     top: 0;
     font-size:400%;
-    font-family:verdana;
+    font-family: rowdies-light, verdana;
     text-align:center;
     height: 100px;
     z-index: 2;
+    max-width: 500px;
+    margin: auto;
 }
 
 i {
@@ -129,6 +131,8 @@ tr:hover {
 }
 
 .highlight {
+    position: relative;
+    display: inline-block;
     font-size: 30px;
     color: rgb(59, 52, 10);
 }
@@ -136,6 +140,39 @@ tr:hover {
 .highlight::selection {
     background: rgba(255, 0, 0, 0.534);
     color: whitesmoke;
+}
+
+.highlighttooltip {
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    top: 35px;
+    left: 0;
+    border-radius: 5px;
+    border: 2px solid rgba(245, 245, 245, 0.637);
+    padding: 3px;
+}
+
+.highlighttooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 8%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+.highlight:hover .highlighttooltip {
+visibility: visible;
+opacity: 1;
 }
 
 .snailz {
@@ -284,6 +321,8 @@ tr:hover {
     border: 2px solid rgb(22, 22, 126);
     padding: 10px;
     max-width: 100px;
+    transition: max-width 0.7s;
+    transition-timing-function: ease-out;
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -292,9 +331,11 @@ tr:hover {
     max-width: 240px;
     font-weight: bold;
     color: white;
-    background-color: black;
+    background-color: rgb(141, 141, 223);
     border: 2px solid rgba(255, 255, 255, 0.575);
-    
+    animation-name: snailexample;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .snailbox {
@@ -302,4 +343,19 @@ tr:hover {
     border: 2px solid blueviolet;
     background-image: linear-gradient(45deg, rgb(139, 139, 255),rgb(189, 0, 189), rgba(29, 11, 192, 0.445));
     width: 360px;  
+}
+
+@keyframes snailexample {
+    0% {background-color: black; left: 100px; top: 0px;}
+    100% {background-color:rgb(141, 141, 223);}
+}
+
+@font-face {
+    font-family: rowdies;
+    src: url(/fonts/rowdies/rowdies-regular.ttf);
+}
+
+@font-face {
+    font-family: rowdies-light;
+    src: url(/fonts/rowdies/rowdies-light.ttf);
 }
