@@ -68,6 +68,8 @@ pre {
     text-decoration: none;
     display: inline-block;
     font-weight: bolder;
+    transition-duration: 0.2s;
+    box-shadow: 4px 4px rgb(218, 94, 37);
 }
 
 .twosnails {
@@ -358,4 +360,54 @@ opacity: 1;
 @font-face {
     font-family: rowdies-light;
     src: url(/fonts/rowdies/rowdies-light.ttf);
+}
+
+.snailleaf {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.buttonsnail {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: rowdies;
+    background-color: purple;
+    width: 200px;
+    padding: 15px;
+    height: 70px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
+
+.buttonsnail:hover {
+    background-color: rgb(177, 21, 177);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.425);
+}
+
+.buttonsnail span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonsnail span:after {
+    content: "🐌";
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+    right: -50px;
+}
+
+.buttonsnail:hover span {
+    padding-right: 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.buttonsnail:hover span:after {
+    opacity: 1;
+    right: 0;
 }
